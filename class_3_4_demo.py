@@ -68,16 +68,14 @@ def practice_5():
                 break
         if flag == 1:
             print("%d是质数" % i)
-    else :
-        print("没有循环数据")
 
 if __name__ == '__main__':
-    # practice_1()
-    # print("\n————————————————————————————\n")
-    # practice_2()
-    # print("\n————————————————————————————\n")
-    # practice_3()
-    # print("\n————————————————————————————\n")
+    practice_1()
+    print("\n————————————————————————————\n")
+    practice_2()
+    print("\n————————————————————————————\n")
+    practice_3()
+    print("\n————————————————————————————\n")
     practice_4()
     print("\n————————————————————————————\n")
     practice_5()
