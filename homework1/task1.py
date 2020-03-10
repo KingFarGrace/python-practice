@@ -10,6 +10,7 @@
 '''
 
 # here put the import lib
+import matplotlib
 
 '''
 元素输出和查找：  请输出0-50之间的奇数，偶数，质数；能同时被2和3整除的数
