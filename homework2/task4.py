@@ -23,11 +23,11 @@ def str_counter(any_str):
     other_count = 0
 
     for i in any_str:
-        if i >= 'a' and i <= 'z' or i >= 'A' and i <= 'Z':
+        if i.isalpha():
             letter_count += 1
-        elif i >= '0' and i <= '9':
+        elif i.isdigit():
             num_count += 1
-        elif i == " ":
+        elif i.isspace():
             space_count += 1
         else:
             other_count += 1
