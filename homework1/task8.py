@@ -16,9 +16,6 @@
 将这10个员工，按照工资从高到低打印输出
 '''
 
-#取排序关键字
-def get_key(item):
-    return item['salery']
 
 if __name__ == '__main__':
     info = [{'id' : '01', 'name' : 'A', 'age' : '3', 'salery' : 1200},
@@ -33,7 +30,7 @@ if __name__ == '__main__':
             {'id' : '10', 'name' : 'J', 'age' : '12', 'salery' : 5500}]
 
     #以工资作为排序依据进行降序排序
-    info.sort(key = get_key, reverse = True)
+    info.sort(key = lambda k : k['salery'], reverse = True)
     for i in range(len(info)):
         print("工资排行第{}的员工信息--工号：{}--姓名：{}--工龄：{}--工资：{}\n"
                 .format(i + 1, info[i]['id'], info[i]['name'], info[i]['age'], info[i]['salery']))
