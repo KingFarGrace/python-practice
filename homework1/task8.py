@@ -33,4 +33,5 @@ if __name__ == '__main__':
     info.sort(key = lambda k : k['salery'], reverse = True)
     for i in range(len(info)):
         print("工资排行第{}的员工信息--工号：{}--姓名：{}--工龄：{}--工资：{}\n"
-                .format(i + 1, info[i]['id'], info[i]['name'], info[i]['age'], info[i]['salery']))
+                .format(i + 1, info[i]['id'], info[i]['name'], 
+                info[i]['age'], info[i]['salery']))

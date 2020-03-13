@@ -22,7 +22,7 @@ import random as rd
     D-->成绩<70
 """
 
-def score_classify(score_dict):
+def classify(score_dict):
     rank_dict = {}
     for k, v in score_dict.items():
         if v <= 100 and v >= 90:
@@ -41,5 +41,5 @@ if __name__ == '__main__':
     for i in range(20):
         score['学生%d' % (i + 1)] = rd.randint(40, 100)
     print("学生成绩单为：\n{}".format(score))
-    rank = score_classify(score)
+    rank = classify(score)
     print("\n学生评级为：\n{}".format(rank))

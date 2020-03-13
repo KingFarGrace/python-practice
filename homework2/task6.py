@@ -20,11 +20,11 @@
 def fib(n):
     fib_1 = 1
     fib_2 = 1
-    print("{}, {}".format(fib_1, fib_2), end=", ")
+    print("{} {}".format(fib_1, fib_2), end=" ")
     if n >= 2:
         fib_n = fib_1 + fib_2
         while fib_n <= n:
-            print("{}".format(fib_n), end = ", ")
+            print("{}".format(fib_n), end = " ")
             fib_1 = fib_2
             fib_2 = fib_n
             fib_n = fib_1 + fib_2
@@ -32,5 +32,5 @@ def fib(n):
 
 if __name__ == '__main__':
     bound = int(input("请输入最大值："))
-    print("{}以内的斐波那契数列如下：\n".format(bound))
+    print("\n{}以内的斐波那契数列如下：".format(bound))
     fib(bound)

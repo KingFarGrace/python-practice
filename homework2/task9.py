@@ -22,10 +22,12 @@ def bubble_sort(num_arr):
     for i in range(bound) :
         for j in range(bound - i - 1) :
             if num_arr[j] > num_arr[j + 1] :
-                t = num_arr[j]
-                num_arr[j] = num_arr[j + 1]
-                num_arr[j + 1] = t
-
+                # t = num_arr[j]
+                # num_arr[j] = num_arr[j + 1]
+                # num_arr[j + 1] = t
+                num_arr[j], num_arr[j + 1] =\
+                num_arr[j + 1], num_arr[j]
+                
     return num_arr
 
 

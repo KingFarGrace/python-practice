@@ -18,14 +18,9 @@
 if __name__ == '__main__':
     list1 = [1, 4, 6, 8, 9, 10]
     list2 = [2, 3, 4, 6, 7, 9]
-    same = set()
-    for i in list1:
-        #开始寻找list1与list2的相同元素
-        for j in list2:
-            if i == j:
-                #若找到相同元素，加入相同元素集合
-                same.add(i)
-    if len(same) > 0:
-        print(f"相同元素为：{same}\n")
+    #列表生成式，永远滴神！！！！！
+    list_same = [i for i in set(list1) for j in set(list2) if i == j]
+    if len(list_same) > 0:
+        print(f"相同元素为：{list_same}\n")
     else:
         print("没有相同元素！")

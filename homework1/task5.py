@@ -17,9 +17,6 @@ import random
 '''
 
 if __name__ == '__main__':
-    rand_list = []
-    for x in range(10):
-        rand_list.append(random.randint(0, 100))
-
-    rand_tup = tuple(rand_list)
+    rand_list = [random.randint(1, 100) for i in range(10)]
+    rand_tup = tuple([random.randint(1, 100) for i in range(10)])
     print(f"随机列表为：{rand_list}\n随机元组为：{rand_tup}\n")

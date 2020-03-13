@@ -26,8 +26,6 @@ def find_odds(num_list):
 
 
 if __name__ == '__main__':
-    nums = []
-    for i in range(10):
-        nums.append(rd.randint(1, 1000))
+    nums = [rd.randint(1, 1000) for i in range(1, 20)]
     print("生成的数组为：{}".format(nums))
     find_odds(nums)

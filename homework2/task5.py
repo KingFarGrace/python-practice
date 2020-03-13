@@ -21,7 +21,6 @@ def check_input(any_dict, **kwarg):
         if len(str(v)) > 2:
             v = v[0: 2]
         any_dict[k] = v
-
     return any_dict
 
 
