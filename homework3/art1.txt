@@ -1,0 +1,34 @@
+It is hard to say exactly when the modern computer was invented. 
+Starting in the 1930s and through the 1940s, a number of machines were developed that were like computers. 
+But most of these machines did not have all the characteristics that we associate with computers today. 
+These characteristics are that the machine is electronic, that it has a stored program, and that it is general purpose. 
+One of the first computerlike devices was developed in Germany by Konrad Zuse in 1941.
+Called the Z3, it was general-purpose, stored-program machine with many electronic parts, but it had a mechanical memory. 
+Another electromechanical computing machine was developed by Howard Aiken, with financial assistance from IBM, at Harvard University in 1943. 
+It was called the Automatic Sequence Control Calculator Mark I, or simply the Harvard Mark I. 
+Neither of these machines was a true computer, however, because they were not entirely electronic.
+Perhaps the most influential of the early computerlike devices was the Electronic Numerical Integrator and Computer, or ENIAC.
+It was developed by J. Presper Eckert and John Mauchly at the University of Pennsylvania. 
+The project began in 1943 and was completed in 1946. The machine was huge; it weighed 30 tons and contained over 18,000 vacuum tubes.
+The ENIAC was a major advancement for its time. 
+It was the first general-purpose, electronic computing machine and was capable of performing thousands of operations per second. 
+It was controlled, however, by switches and plugs that had to be manually set. 
+Thus, although it was a general-purpose electronic device, it did not have a stored program. 
+Therefore, it did not have all the characteristics of a computer .
+While working on the ENIAC, Eckert and Mauchly were joined by a brilliant mathematician, John von Neuman. 
+Together, they developed the idea of a stored program computer. 
+This machine, called the Electronic Discrete Variable Automatic Computer, or EDVAC, was the first machine whose design included all the characteristics of a computer. 
+It was not completed, however, until 1951.
+Before the EDVAC was finished, several other machines were built that incorporated elements of the EDVAC design of Eckert, Mauchly, and von Neuman. 
+One was the Electronic Delay Storage Automatic Computer, or EDSAC, which was developed in Cambridge, England. 
+It first operated in May of 1949 and is probably the world’s first electronic stored-program, general-purpose computer to become operational. 
+The first computer to operate in the United States was the Binary Automatic Computer, or BINAC, which became operational in August of 1949.
+Like other computing pioneers before them, Eckert and Mauchly formed a company in 1947 to develop a commercial computer. 
+The company was called the Eckert-Mauchly Computer Corporation. 
+Their objective was to design and build the Universal Automatic Computer or UNIVAC. 
+Because of difficulties of getting financial support, they had to sell the company to Remington Rand in 1950. 
+Eckert and Mauchly continued to work on the UNIVAC at Remington Rand and completed it in 1951. 
+Known as the UNIVAC I, this machine was the first commercially available computer.
+The first UNIVAC I was delivered to the Census Bureau and used for the 1950 census. 
+The second UNIVAC I was used to predict that Dwight Eisenhower would win the 1952 presidential election, less than an hour after the polls closed. 
+The UNIVAC I began the modern of computer use.

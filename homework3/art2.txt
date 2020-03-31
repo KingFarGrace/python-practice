@@ -1,0 +1,73 @@
+First-generation computers were characterized by the use of vacuum tubes as their principal electronic component. 
+Vacuum tubes are bulky and produce a lot of heat, so first-generation computers were large and required extensive air conditioning to keep them cool. 
+In addition, because vacuum tubes do not operate very fast, these computers were relatively slow. 
+The UNIVAC I was the first commercial computer in this generation. 
+As noted earlier, it was used in the Census Bureau in 1951. 
+It was also the first computer to be used in a business application. 
+In 1954, General Electric took delivery of a UNIVAC I and used it for some of its business data processing.
+The UNIVAC I was not the most popular first-generation computer, however. 
+This honor goes to the IBM 650. It was first delivered in 1955 before Remington Rand could come out with a successor to the UNIVAC I. 
+With the IBM 650, IBM captured the majority of the computer market, a position it still holds today.
+At the same time that hardware was evolving, software was developing. 
+The first computers were programmed in machine language, but during the first computer generation, the idea of programming language translation and high-level languages occurred. 
+Much of the credit for these ideas goes to Grace Hopper, who, as a Navy lieutenant in 1945, learned to program the Harvard Mark I. 
+In 1952, she developed the first programming language translator, followed by others in later years. 
+She also developed a language called Flow-matic in 1957, which formed the basis for COBOL, the most commonly used business programming language today.
+Other software developments during the first computer generation include the design of the FORTRAN programming language in 1957. 
+This language became the first widely used high-level language. 
+Also, the first simple operating systems became available with first-generation computers.
+In the second generation of computers, transistors replaced vacuum tubes. 
+Although invented in 1948, the first all-transistor computer did not become available until 1959. 
+Transistors are smaller and less expensive than vacuum tubes, and they operate faster and produce less heat. 
+Hence, with second-generation computers, the size and cost of computers decreased, their speed increased, and their air-conditioning needs were reduced.
+Many companies that had not previously sold computer entered the industry with the second generation. One of these companies that still makes computers is Control Data Corporation (CDC). They were noted for making high-speed computers for scientific work.
+Remintong Rand, now called Sperr-Rand Corporation, made several second-generation UNIVAC computers. 
+IBM, however, continued to dominate the industry. 
+One of the most popular second-generation computers was the IBM 1401, which was a medium-sized computer used by many businesses.
+All computers at this time were mainframe computers costing over a million dollars. 
+The first minicomputer became available in 1960 and cost about $120,000. 
+This was the PDP-1, manufactured by Digital Equipment Corporation (DEC). 
+Software also continued to develop during this time. 
+Many new programming languages were designed, including COBOL in 1960. 
+More and more businesses and organizations were beginning to use computers for their data processing needs.
+The technical development that marks the third generation of computers is the use of integrated circuits or ICs in computers. 
+An integrated circuit is a piece of silicon (a chip) containing numerous transistors. 
+One IC replaces many transistors in a computer; result in a continuation of the trends begun in the second generation. 
+These trends include reduced size, reduced cost, increased speed, and reduced need for air conditioning.
+Although integrated circuits were invented in 1958, the first computers to make extensive use of them were not available until 1964. 
+In that year, IBM introduced a line of mainframe computers called the System/360. 
+The computers in this line became the most widely used third-generation machines. 
+There were many models in the System/360 line, ranging from small, relatively slow, and inexpensive ones, to large, very fast, and costly models. 
+All models, however, were compatible so that programs written for one model could be used on another. 
+This feature of compatibility across many computers in a line was adopted by other manufacturers of third-generation computers.
+The third computer generation was also the time when minicomputers became widespread. 
+The most popular model was the PDP-8, manufactured by DEC. 
+Other companies, including Data General Corporation and Hewlett-Packard Company, introduced minicomputers during the third generation.
+The principal software development during the third computer generation was the increased sophistication of operating systems. 
+Although simple operating systems were developed for first-and second-generation computers, many of the features of modern operating systems first appeared during the third generation. 
+These include multiprogramming, virtual memory, and time-sharing. 
+The first operating systems were mainly batch systems, but during the third generation, interactive systems, especially on minicomputers, became common. 
+The BASIC programming language was designed in 1964 and became popular during the third computer generation because of its interactive nature.
+The fourth generation of computers is more difficult to define than the other three generations. 
+This generation is characterized by more and more transistors being contained on a silicon chip. 
+First there was Large Scale Integration (LSI), with hundreds and thousands of transistors per chip, then came Very Large Scale Integration (VLSI), with tens of thousands and hundreds of thousands of transistors. 
+The trend continues today.
+Although not everyone agrees that there is a fourth computer generation, those that do feel that it began in 1971, when IBM introduced its successors to the System/360 line of computers. 
+These mainframe computers were called the System/370, and current-model IBM computers, although not called System/370s, evolved directly from these computers.
+Minicomputers also proliferated during the fourth computer generation. 
+The most popular lines were the DEC PDP-11 models and the DEC VAX, both of which are available in various models today.
+Supercomputers first became prominent in the fourth generation. 
+Although many companies, including IBM and CDC, developed high-speed computers for scientific work, it was not until Cray Research, Inc., introduced the Cray 1 in 1975 that supercomputers became significant. 
+Today, supercomputers are an important computer classification.
+Perhaps the most important trend that began in the fourth generation is the proliferation of microcomputers. 
+As more and more transistors were put on silicon chips, it eventually became possible to put an entire computer processor, called a microprocessor, on a chip. 
+The first computer to use microprocessors became available in the mid-1970s. 
+The first microcomputer designed for personal use was the Altair, which was sold in 1975. 
+The first Apple computer, marketed with the IBM PC in 1981. Today, microcomputers far outnumber all other types of computers combined.
+Software development during the fourth computer generation started off with little change from the third generation. 
+Operating systems were gradually improved, and new languages were designed. 
+Database software became widely used during this time. The most important trend, however, resulted from the microcomputer revolution. 
+Packaged software became widely available for microcomputers so that today most software is purchased, not developed from scratch.
+We may have defined our last generation of computers and begun the era of generationless computers. 
+Even though computer manufacturers talk of “fifth” and “sixth”-generation computers, this talk is more a marketing play than a reflection of reality.
+Advocates of the concept of generationless computers say that even though technological innovations are coming in rapid succession, no single innovation is, or will be, significant enough to characterize another generation of computers.

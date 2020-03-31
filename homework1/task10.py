@@ -22,7 +22,7 @@ def text_spliter(text_part):
     text_part.lower()
     for ch in r'[]\;,./<>?:{}|~!@#$%^&*()_+':
         text_part = text_part.replace(ch, " ")
-    return text.split()
+    return text_part.split()
 
 
 def dict_to_list(any_dict):

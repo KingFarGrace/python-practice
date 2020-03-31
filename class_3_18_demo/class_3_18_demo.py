@@ -41,7 +41,8 @@ def open_some_file():
     print(f1.readlines())
     f2 = open(r"homework2\task_list.txt", "r", encoding='utf-8')
     print(f2.readlines())
-    # f3 = open(r"..\b_file\aa.txt", "r", encoding='utf-8')
+    # f3 = open(r"..\somefile\aa.txt", "r", encoding='utf-8')
+
 
 def test_pickle():
     dict1 = {   'info1': [1, 88, 18],
