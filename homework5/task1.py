@@ -11,7 +11,28 @@
 """
 
 # here put the import lib
+from datetime import datetime
+import time
 
 """
-编写一个装饰器，能计算其他函数的运行时间；
+编写一个装饰器，能计算其他函数的运行时间
 """
+
+
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start_t = datetime.now()
+        func(*args, **kwargs)
+        end_t = datetime.now()
+        print("{}运行时间为：{}s".format(func.__name__, (end_t - start_t).seconds))
+    return wrapper
+
+
+@timer
+def do_something():
+    time.sleep(3)
+    print("运行完成！")
+
+
+if __name__ == '__main__':
+    do_something()
