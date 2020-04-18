@@ -1,3 +1,8 @@
+venv
+venv/Scripts
+.vscode
+.idea
+
 # Compiled class file
 *.class
 
