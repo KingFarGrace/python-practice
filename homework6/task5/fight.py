@@ -31,17 +31,50 @@ import random
 
 
 class Fight(object):
-    __DOG_NUM = 3
-    __HUMAN_NUM = 2
+    """
+    类功能概述：封装了开始一场战斗所必要的功能
+    
+    类功能具体描述：实现了战斗的开始/胜负条件判断/战场信息更新描述等功能
+    
+    类变量
+    --------------------
+    私有变量：
+    __dog_num：当前战场上存活的狗的数量，初始化为  3
+    __human_num：当前战场上存活的人类的数量， 初始化为  2
+    __dog_list：狗对象列表
+    __human_list：人对象列表
+    __key：决定人狗攻击次序，小于  500  为狗队先攻击，
+            随机在  1-1000  之间取值，初始化为  0
+
+    公有变量：
+    
+    方法及功能概述
+    --------------------
+    实例方法：
+    show_battle_info(self)：输出当前战场信息
+    start(self)：开始一场战斗，满足胜负条件时自动结束
+    __dog_round(self)：开始狗队的行动轮次
+    __human_round(self)：开始人队的行动轮次
+    __is_dog_exhausted(self)：判断狗队是否已经无战斗能力（攻击力都为0）
+    __is_human_exhausted(self)：判断人队是否已经无战斗能力（攻击力都为0）
+
+    类方法：
+
+    静态方法：   
+    
+    """
+
+    __dog_num= 3
+    __human_num = 2
     __dog_list = []
     __human_list = []
-    # 决定人狗攻击次序，小于500为狗队先攻击，随机取值为1-1000
     __key = 0
     
     def __init__(self):
-        for idx in range(self.__DOG_NUM):
+        # 初始化  3  条狗和  2  个人，随机生成一个判断轮次优先的  key
+        for idx in range(self.__dog_num):
             self.__dog_list.append(Dog(idx + 1))
-        for idx in range(self.__HUMAN_NUM):
+        for idx in range(self.__human_num):
             self.__human_list.append(Human(idx + 1))
         self.__key = random.randint(1, 1001)
         
@@ -49,60 +82,95 @@ class Fight(object):
         print("当前战场信息")
         print("+------------------------------+")
         print("狗队：\n")
-        for idx in range(self.__DOG_NUM):
+        for idx in range(self.__dog_num):
             print(self.__dog_list[idx])
         print("人队：\n")
-        for idx in range(self.__HUMAN_NUM):
+        for idx in range(self.__human_num):
             print(self.__human_list[idx])
 
     def start(self):
+        """
+        划分攻击先后次序后，进入循环战斗直到满足胜负条件
+        胜负条件：
+        1. 先死光的队伍输
+        2. 攻击力全部为零的队伍自动判负
+        3. 先攻击的队伍先判断胜负
+
+        每一个战斗轮次顺序：
+        -> 输出战场信息
+        -> 先攻击的队伍开始战斗轮次
+        -> 判断一次胜负条件
+        -> 后攻击的队伍开始战斗轮次
+        -> 判断一次胜负条件
+        因为判断了两次，所以不会出现平局
+        """
         if self.__key <= 500:
             while True:
                 self.show_battle_info()
                 dog_rem = self.__dog_round()
-                if self.__HUMAN_NUM == 0:
+                if self.__human_num == 0 or self.__is_human_exhausted():
                     print("狗队胜利！")
                     break
                 human_rem = self.__human_round()
-                if self.__DOG_NUM == 0:
+                if self.__dog_num == 0 or self.__is_dog_exhausted():
                     print("人队胜利！")
                     break
         else:
             while True:
                 self.show_battle_info()               
                 human_rem = self.__human_round()
-                if self.__DOG_NUM == 0:
+                if self.__dog_num == 0 or self.__is_dog_exhausted():
                     print("人队胜利！")
                     break
                 dog_rem = self.__dog_round()
-                if self.__HUMAN_NUM == 0:
+                if self.__human_num == 0 or self.__is_human_exhausted():
                     print("狗队胜利！")
                     break
 
     
     def __dog_round(self):
+        # 用户选择一名攻击者
         print("请狗队选择进攻队员：")
         dog_id = int(input("请输入编号："))
-        human_idx = random.randint(0, self.__HUMAN_NUM - 1)
+        # 系统随机选择一名攻击对象
+        human_idx = random.randint(0, self.__human_num - 1)
         human_obj = self.__human_list[human_idx]
         self.__dog_list[dog_id - 1].attack(human_obj)
+        # 输出攻击信息
         print("\n狗队{}号--攻击-->人队{}号\n".format(dog_id, human_obj.id + 1))
+        # 判断被攻击者是否存活，死亡则离场（从列表中删除）
         if not human_obj.is_alive():
             print("人队{}号退场".format(human_obj.id))
             del human_obj
-            self.__HUMAN_NUM -= 1
+            # 更新存活者数量
+            self.__human_num -= 1
 
     def __human_round(self):
+        # 结构同  __dog_round(self)
         print("请人队选择进攻队员：")
         human_id = int(input("请输入编号："))
-        dog_idx = random.randint(0, self.__DOG_NUM - 1)
+        dog_idx = random.randint(0, self.__dog_num - 1)
         dog_obj = self.__dog_list[dog_idx]
         self.__human_list[human_id - 1].attack(dog_obj)
         print("\n人队{}号--攻击-->狗队{}号\n".format(human_id, dog_obj.id + 1))
         if not dog_obj.is_alive():
             print("狗队{}号退场".format(dog_obj.id))
             del dog_obj
-            self.__DOG_NUM -= 1
+            self.__dog_num -= 1
+
+    def __is_dog_exhausted(self):
+        # 如果有攻击力不为零的狗存在，则返回False，反之返回True
+        for idx in range(self.__dog_num):
+            if self.__dog_list[idx].get_attack() != 0:
+                return False
+        return True    
+
+    def __is_human_exhausted(self):
+        # 如果有攻击力不为零的人存在，则返回False，反之返回True
+        for idx in range(self.__human_num):
+            if self.__human_list[idx].get_attack() != 0:
+                return False
+        return True                
 
 
 if __name__ == '__main__':
