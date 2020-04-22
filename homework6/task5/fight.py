@@ -118,12 +118,21 @@ class Fight(object):
         else:
             while True:
                 self.show_battle_info()               
+<<<<<<< Updated upstream
                 self.__human_round()
                 if self.__dog_num == 0 or self.__is_dog_exhausted():
                     print("人队胜利！")
                     break
                 self.__dog_round()
                 if self.__human_num == 0 or self.__is_human_exhausted():
+=======
+                dog_rem = self.__human_round()
+                if self.__DOG_NUM == 0:
+                    print("人队胜利！")
+                    break
+                human_rem = self.__dog_round()
+                if self.__HUMAN_NUM == 0:
+>>>>>>> Stashed changes
                     print("狗队胜利！")
                     break
 
