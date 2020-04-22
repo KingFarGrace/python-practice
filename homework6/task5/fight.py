@@ -107,22 +107,22 @@ class Fight(object):
         if self.__key <= 500:
             while True:
                 self.show_battle_info()
-                dog_rem = self.__dog_round()
+                self.__dog_round()
                 if self.__human_num == 0 or self.__is_human_exhausted():
                     print("狗队胜利！")
                     break
-                human_rem = self.__human_round()
+                self.__human_round()
                 if self.__dog_num == 0 or self.__is_dog_exhausted():
                     print("人队胜利！")
                     break
         else:
             while True:
                 self.show_battle_info()               
-                human_rem = self.__human_round()
+                self.__human_round()
                 if self.__dog_num == 0 or self.__is_dog_exhausted():
                     print("人队胜利！")
                     break
-                dog_rem = self.__dog_round()
+                self.__dog_round()
                 if self.__human_num == 0 or self.__is_human_exhausted():
                     print("狗队胜利！")
                     break
