@@ -11,6 +11,7 @@
 """
 
 # here put the import lib
+import request
 
 """
 给定一个网址（包含了优质的英语学习音频文件），http://www.listeningexpress.com/studioclassroom/ad/；  请大家写一个爬虫，将里面的英语节目MP3，都下载下来；
@@ -24,4 +25,6 @@ MP3文件中有空格字符，组成下载网址时，需要进行url编码，�
 >>> from urllib.parse import quote
 >>> quote('2019-04-13 NEWSworthy Clips.mp3')
 '2019-04-13%20NEWSworthy%20Clips.mp3'
+
+请求头：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36
 """
