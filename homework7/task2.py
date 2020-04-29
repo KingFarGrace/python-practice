@@ -49,7 +49,7 @@ def get_profiles():
                     if len(label) != 0:
                         pro_f.write("url:{}--profile link--".format(url))
                         for rec in label:
-                            pro_f.write(str(rec))
+                            pro_f.write(rec["href"])
                         pro_f.write('\n')
                         pro_f.flush()                    
                         count += 1
