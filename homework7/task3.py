@@ -40,16 +40,21 @@ def get_source():
              AppleWebKit/537.36 (KHTML, like Gecko) \
              Chrome/81.0.4044.122 Safari/537.36'}
      try:
+          # 爬取网页
           url = "http://www.listeningexpress.com/studioclassroom/ad/"
           html = requests.get(url, headers=head, timeout=30)
           html.raise_for_status()
           html.encoding = html.apparent_encoding
           text = html.text
+          # 匹配mp3格式文件
           rec = re.compile(r"sc-ad\s\d{4}-\d{2}-\d{2}\s.*?\.mp3")
           mp3_link = rec.findall(text)
           for mp3 in mp3_link:
+               # 去除转义字符
                mp3 = mp3.replace('\\', '')
+               # 拼接命令
                com = "Wget -P D:\\doc\\python-practice\\homework7\\mp3 " + url + quote(mp3)
+               # 通过shell调用命令
                subprocess.Popen(com, cwd="D:\\doc\\", shell=True)
      except Exception as e:
           print(e)
