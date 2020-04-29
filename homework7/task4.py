@@ -13,9 +13,9 @@
 # here put the import lib
 
 """
-爬取这个网址上https://www.programcreek.com/python/，搜索request的范例代码；保存到txt文件中（只保留文字）；
-    文本文件类似（注意是类似的效果，不是说一定要做的一模一样）的效果如下：
+爬取这个网址上http://www.python3.vip/doc/prac/python/0001/，所有的Python练习题题目和答案；保存到txt文件中（只保留文字）；
+文本文件类似（注意是类似的效果，不是说一定要做的一模一样）的效果如下：
 
-  参考文档：https://blog.csdn.net/weixin_43687366/article/details/88877996
-   大家看完这篇文档后，再开始动手做这道题；
+参考文档：https://blog.csdn.net/weixin_43687366/article/details/88877996
+大家看完这篇文档后，再开始动手做这道题；
 """
