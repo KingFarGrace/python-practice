@@ -53,9 +53,12 @@ def get_source():
                # 去除转义字符
                mp3 = mp3.replace('\\', '')
                # 拼接命令
+               # 命令需要根据本机情况修改，否则会出现调用问题
                com = "Wget -P D:\\doc\\python-practice\\homework7\\mp3 " + url + quote(mp3)
                # 通过shell调用命令
                subprocess.Popen(com, cwd="D:\\doc\\", shell=True)
+     except WindowsError as we:
+          print("控制台指令有误！请根据本机情况修改。")
      except Exception as e:
           print(e)
 
