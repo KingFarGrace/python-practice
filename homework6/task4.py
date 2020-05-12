@@ -18,9 +18,6 @@
 """
 
 class Student(object):
-    __name = ""
-    __age = 0
-    __sex = ""
     __score = {'语文': 0, '数学': 0, '英语': 0}
 
     def __init__(self, name, age, sex, score):

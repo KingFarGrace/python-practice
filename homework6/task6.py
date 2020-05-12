@@ -21,10 +21,6 @@ import pandas as pd
 """
 
 class Student(object):
-    __class_id = 0
-    __stu_id = 0
-    __name = ""
-    __score = 0
 
     def __init__(self, class_id, stu_id, name, score):
         self.__class_id = class_id
