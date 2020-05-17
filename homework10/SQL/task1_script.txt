@@ -1,0 +1,15 @@
+1.  select name, age, cls_id from students where gender='男';
+2.  select * from students where id<4 or is_delete=0;
+3.  select * from students where name like '黄%';
+4.  select * from students where id=1 or id=3 or id=8;
+5.  select * from students where id>=3 and id<=8;
+6.  select * from students
+    where gender='男' and is_delete=0
+    order by age DESC;
+7.  select count(*) from students where gender='女';
+8.  select avg(age) from students;
+9.  select avg(age) from students where gender='女';
+    select avg(age) from students where gender='男';
+10. select gender, group_concat(name)
+    from students
+    group by gender;
