@@ -59,8 +59,8 @@ def find_rec():
         else:
             print("查找成功！留言内容为：{}".format(result[0]))
             flag = True
-    except Exception as e_add:
-        print(e_add)
+    except Exception as e_exe:
+        print(e_exe)
         flag = False
         conn.rollback()
     finally:
@@ -115,3 +115,4 @@ if __name__ == '__main__':
         print("数据库连接失败")
     finally:
         conn.close()
+        print("数据库连接已关闭")
