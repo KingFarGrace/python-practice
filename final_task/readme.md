@@ -7,3 +7,4 @@
 + main.py：启动爬虫
 + get_avg.py：求得北京地区python开发者薪资水平（单位万/月）
 + webspider.sql：数据库文件
++ requirement.tx：环境配置文件
